@@ -70,7 +70,7 @@ class AddSubtitlesToFramesNode:
         
 
         last_frame_no = 0
-        for i in range(len(alignment)):
+        for i in range(len(images)):
             alignment_obj = alignment[i]
             start_frame_no = math.floor(alignment_obj["start"] * video_fps)
             end_frame_no = math.floor(alignment_obj["end"] * video_fps)
